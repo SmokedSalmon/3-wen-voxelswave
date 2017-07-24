@@ -18,6 +18,10 @@ app.get('/', function(req, res) {
     res.render('index');
 });
 
+app.get('/wavy', function(req, res) {
+    res.render('wavy');
+});
+
 // 404 catch-all handler (middleware)
 app.use(function(req, res, next){
 	res.status(404);
